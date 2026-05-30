@@ -1,0 +1,51 @@
+name: VethEnchant
+version: '${version}'
+main: dev.vethcraft.vethenchant.VethEnchantPlugin
+bootstrapper: dev.vethcraft.vethenchant.bootstrap.VethEnchantBootstrap
+api-version: '26.1.2'
+load: STARTUP
+authors:
+  - VethCraft
+description: Lightweight Paper-native enchantment framework for VethCraft.
+dependencies:
+  server:
+    packetevents:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    CraftEngine:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    CustomCrops:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    WorldEdit:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    WorldGuard:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    Residence:
+      load: BEFORE
+      required: false
+      join-classpath: true
+permissions:
+  vethenchant.admin:
+    description: Allows using VethEnchant admin commands.
+    default: op
+  vethenchant.command:
+    description: Allows viewing VethEnchant information.
+    default: true
+  vethenchant.protection.bypass:
+    description: Bypasses VethEnchant protection hook checks.
+    default: op
+  vethenchant.limit.bypass:
+    description: Bypasses VethEnchant enchantment slot limits.
+    default: op
+  vethenchant.placed-blocks.bypass:
+    description: Explicitly allows VethEnchant area mining to affect player-placed blocks when configured.
+    default: false

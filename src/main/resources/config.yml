@@ -1,0 +1,43 @@
+settings:
+  debug: false
+  auto-generate-default-files: true
+
+packet-events:
+  enabled: true
+
+protection:
+  bypass-permission: "vethenchant.protection.bypass"
+  worldguard: true
+  residence: true
+
+placed-block-protection:
+  enabled: true
+  bypass-permission: "vethenchant.placed-blocks.bypass"
+  autosave-interval-seconds: 60
+
+custom-crops:
+  enabled: true
+  craftengine-crops-path: "C:/Users/Administrator/Desktop/1.21.11server/Minecraft/Servers/_Configuration/CraftEngine/resources/customcrops/configuration/crops"
+
+telekinesis:
+  collect-exp: true
+
+tooltip:
+  enabled: true
+  enchanting-preview-enabled: false
+  blank-line-before-existing-lore: true
+  ce:
+    tooltip-style-enabled: true
+
+palette:
+  primary: "#63bbd0"
+  warning: "#fbda41"
+  danger: "#d42517"
+  muted: "#8A8F98"
+  text: "#f8f4ed"
+
+messages:
+  prefix: "<primary>VethEnchant</primary> <muted>|</muted> "
+  reload: "<primary>配置已重载。</primary><muted> 注册表和硬修改数值需要重启服务器后生效。</muted>"
+  no-permission: "<danger>你没有权限使用这个指令。</danger>"
+  enchant-limit-deny: "<warning>这件物品的附魔槽位不够啦。</warning> <muted>当前 {used}/{max}</muted>"
